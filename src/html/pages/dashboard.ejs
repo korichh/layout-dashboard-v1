@@ -1,0 +1,152 @@
+<main class="dashboard">
+    <%- include('../partials/dashboard/loader.ejs', { class: 'dashboard__loader' }) %>
+    <header class="dashboard__header dashboard-header">
+        <div class="dashboard-header__inner">
+            <button data-fade="left|0" class="dashboard-burger dashboard-header__burger"><span></span></button>
+            <a href="/" data-fade="left|0.05" class="dashboard-logo dashboard-header__logo"><i class="icon-settings"></i><span><span>Dashboard</span><small class="dashboard-version">v.01</small></span></a>
+            <div data-fade="left|0.1" class="dashboard-account dashboard-header__account">
+                <div class="dashboard-account__avatar"><img src="img/account/avatar.webp" alt="account avatar" loading="lazy" width="50" height="50"></div>
+                <div class="dashboard-account__content">
+                    <div class="dashboard-account__name">Evano</div>
+                    <div class="dashboard-account__position">Project Manager</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="dashboard__sidebar dashboard-sidebar">
+        <div class="dashboard-sidebar__inner">
+            <a href="/" data-fade="left|0" class="dashboard-logo dashboard-sidebar__logo"><i class="icon-settings"></i><span><span>Dashboard</span><small class="dashboard-version">v.01</small></span></a>
+            <nav data-fade="left|0.05" class="dashboard-nav dashboard-sidebar__nav">
+                <ul class="menu">
+                    <li class="menu-item"><a href="#"><i class="icon-key"></i><span>Dashboard</span></a></li>
+                    <li class="menu-item"><a href="#"><i class="icon-square"></i><span>Product</span><i class="icon-arrow"></i></a></li>
+                    <li class="menu-item current-menu-item"><a href="#"><i class="icon-user"></i><span>Customers</span><i class="icon-arrow"></i></a></li>
+                    <li class="menu-item"><a href="#"><i class="icon-wallet"></i><span>Income</span><i class="icon-arrow"></i></a></li>
+                    <li class="menu-item"><a href="#"><i class="icon-discount"></i><span>Promote</span><i class="icon-arrow"></i></a></li>
+                    <li class="menu-item"><a href="#"><i class="icon-question"></i><span>Help</span><i class="icon-arrow"></i></a></li>
+                </ul>
+            </nav>
+            <div data-fade="left|0.1" class="dashboard-account dashboard-sidebar__account">
+                <div class="dashboard-account__avatar"><img src="img/account/avatar.webp" alt="account avatar" loading="lazy" width="50" height="50"></div>
+                <div class="dashboard-account__content">
+                    <div class="dashboard-account__name">Evano</div>
+                    <div class="dashboard-account__position">Project Manager</div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <section class="dashboard__body dashboard-body">
+        <div class="dashboard-body__inner">
+            <div data-fade="bottom|0.15" class="dashboard-greeting dashboard-body__greeting">
+                <h1>Hello, Evano 👋🏼</h1>
+            </div>
+            <div data-fade="bottom|0.2" class="dashboard-box dashboard-customers dashboard-body__box">
+                <div class="dashboard-box__inner">
+                    <div class="dashboard-customers__head">
+                        <div class="dashboard-customers__heading">
+                            <h2 class="dashboard-box__title dashboard-customers__title">All Customers</h2>
+                            <div class="dashboard-customers__active">Active Members</div>
+                        </div>
+                        <label class="dashboard-customers__search dashboard-box__search">
+                            <i class="icon-search"></i>
+                            <input type="search" name="search" placeholder="Search">
+                        </label>
+                    </div>
+                    <div class="dashboard-box__table dashboard-customers__table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Customer Name</th>
+                                    <th>Company</th>
+                                    <th>Phone Number</th>
+                                    <th>Email</th>
+                                    <th>Country</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Jane Cooper</td>
+                                    <td>Microsoft</td>
+                                    <td>(225) 555-0118</td>
+                                    <td>jane@microsoft.com</td>
+                                    <td>United States</td>
+                                    <td class="dashboard-box__table-status _active"><span>Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Floyd Miles</td>
+                                    <td>Yahoo</td>
+                                    <td>(205) 555-0100</td>
+                                    <td>floyd@yahoo.com</td>
+                                    <td>Kiribati</td>
+                                    <td class="dashboard-box__table-status _inactive"><span>Inactive</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Ronald Richards</td>
+                                    <td>Adobe</td>
+                                    <td>(302) 555-0107</td>
+                                    <td>ronald@adobe.com</td>
+                                    <td>Israel</td>
+                                    <td class="dashboard-box__table-status _inactive"><span>Inactive</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Marvin McKinney</td>
+                                    <td>Tesla</td>
+                                    <td>(252) 555-0126</td>
+                                    <td>marvin@tesla.com</td>
+                                    <td>Iran</td>
+                                    <td class="dashboard-box__table-status _active"><span>Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jerome Bell</td>
+                                    <td>Google</td>
+                                    <td>(629) 555-0129</td>
+                                    <td>jerome@google.com</td>
+                                    <td>Réunion</td>
+                                    <td class="dashboard-box__table-status _active"><span>Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kathryn Murphy</td>
+                                    <td>Microsoft</td>
+                                    <td>(406) 555-0120</td>
+                                    <td>kathryn@microsoft.com</td>
+                                    <td>Curaçao</td>
+                                    <td class="dashboard-box__table-status _active"><span>Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob Jones</td>
+                                    <td>Yahoo</td>
+                                    <td>(208) 555-0112</td>
+                                    <td>jacob@yahoo.com</td>
+                                    <td>Brazil</td>
+                                    <td class="dashboard-box__table-status _active"><span>Active</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Kristin Watson</td>
+                                    <td>Facebook</td>
+                                    <td>(704) 555-0127</td>
+                                    <td>kristin@facebook.com</td>
+                                    <td>Åland Islands</td>
+                                    <td class="dashboard-box__table-status _inactive"><span>Inactive</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="dashboard-box__pagination dashboard-customers__pagination">
+                        <span class="dashboard-box__pagination-text">Showing data <span class="dashboard-box__pagination-from">1</span> to <span class="dashboard-box__pagination-to">8</span> of <span class="dashboard-box__pagination-total">256K</span> entries</span>
+                        <ul class="dashboard-box__pagination-list">
+                            <a class="prev page-numbers" href="#">&#x3C;</a>
+                            <span class="page-numbers current">1</span>
+                            <a class="page-numbers" href="#">2</a>
+                            <a class="page-numbers" href="#">3</a>
+                            <a class="page-numbers" href="#">4</a>
+                            <span class="page-numbers dots">…</span>
+                            <a class="page-numbers" href="#">40</a>
+                            <a class="next page-numbers" href="#">&#x3E;</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
